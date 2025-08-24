@@ -1,0 +1,32 @@
+/* Tooltip styles for the "Save Highlight?" bubble */
+.whs-tooltip {
+  position: absolute;
+  z-index: 2147483647;
+  background: white;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 10px;
+  padding: 8px 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 13px;
+  line-height: 1.2;
+}
+.whs-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.whs-btn {
+  cursor: pointer;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #111827;
+  color: white;
+  font-size: 12px;
+}
+.whs-btn:hover { opacity: 0.9; }
+.whs-muted {
+  color: #6b7280;
+  font-size: 12px;
+}

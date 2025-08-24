@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Highlights</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <h1>Highlights</h1>
+    <div class="actions">
+      <button id="summarize">Summarize</button>
+      <a id="optionsLink" href="../options/options.html" target="_blank" title="Set API Key">⚙️</a>
+    </div>
+  </header>
+
+  <div id="summary" class="summary hidden"></div>
+
+  <div id="list" class="list"></div>
+
+  <template id="item-tpl">
+    <div class="item">
+      <div class="text"></div>
+      <div class="meta">
+        <a class="title" target="_blank" rel="noopener noreferrer"></a>
+        <span class="dot">•</span>
+        <span class="time"></span>
+      </div>
+      <div class="buttons">
+        <a class="open" target="_blank" rel="noopener noreferrer">Open</a>
+        <button class="delete">Delete</button>
+      </div>
+    </div>
+  </template>
+
+  <script src="popup.js"></script>
+</body>
+</html>
